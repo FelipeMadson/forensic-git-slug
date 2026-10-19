@@ -1,0 +1,27 @@
+{
+  "name": "forensic-git-slug",
+  "version": "1.0.0",
+  "description": "Deterministic Git forensic auditing and repository integrity analysis tool",
+  "type": "module",
+  "bin": {
+    "git-forensic": "./src/cli.ts"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/forensic.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "git",
+    "forensics",
+    "integrity",
+    "audit",
+    "security"
+  ],
+  "author": "Felipe Madson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2"
+  }
+}
